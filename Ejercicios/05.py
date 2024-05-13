@@ -58,6 +58,28 @@ entera respectivamente."""
 el número de años, y muestre por pantalla el capital obtenido en la inversión."""
 
 # c , i, a = int(float(input("¿Qué cantidad quieres invertir? "))), int(float(input("¿A que interés? "))), int(input("¿Cuantos años? "))
-# t = (c*i)*a
+# t = (c*(1+(i/100)))*a
 
-# print(f"El capital obtenido es de {t} €")
+# print(f"El capital obtenido es de {"%.2f" % t} €")
+
+
+
+"""10. Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas. Suele hacer venta por correo y la empresa de logística les cobra por peso de cada paquete así que deben calcular el peso de los payasos y muñecas que saldrán en cada paquete a demanda. Cada payaso pesa 112 g y cada muñeca 75 g. Escribir un programa que lea el número de payasos y muñecas vendidos en el último pedido y calcule el peso total del paquete que será enviado."""
+
+numP = int(input("¿Cuantos payasos quieres comprar? "));
+numM = int(input("¿Cuantas muñecas quieres comprar? "));
+
+pesoP = 112
+pesoM = 75
+
+print(f"Se han vendido {numP} payasos y {numM} muñecas. El peso total del paquete es {(numP*pesoP)+(numM*pesoM)} g")
+
+"""11. Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interés al año. Estos ahorros debido a intereses, que no se cobran hasta finales de año, se te añaden al balance final de tu cuenta de ahorros. Escribir un programa que comience leyendo la cantidad de dinero depositada en la cuenta de ahorros, introducida por el usuario. Después el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras el primer, segundo y tercer años. Redondear cada cantidad a dos decimales."""
+
+ah = int(input("¿Qué cantidad de ahorros tienes? "));
+
+print(f"Se han vendido {numP} payasos y {numM} muñecas. El peso total del paquete es {(numP*pesoP)+(numM*pesoM)} g")
+
+
+
+"""12. Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%. Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total."""
