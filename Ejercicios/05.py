@@ -88,7 +88,7 @@ el número de años, y muestre por pantalla el capital obtenido en la inversión
 
 p = int(input("¿Cuantas barras se han vendido que no son frescas? "));
 P = p*3.49
-d = p*(3.49*0.60)
-T = p*(3.49*0.40)
+d = p*3.49*0.60
+T = p*3.49*0.40
 
 print(f"\nBarra de pan: 3,49€   {p} ud   {"%.2f" % P}€\nDescuento -60%: -{"%.2f" % d}€\nTotal con descuento: {"%.2f" % T}€")
