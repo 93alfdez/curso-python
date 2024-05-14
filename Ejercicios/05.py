@@ -76,12 +76,19 @@ el número de años, y muestre por pantalla el capital obtenido en la inversión
 
 """11. Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interés al año. Estos ahorros debido a intereses, que no se cobran hasta finales de año, se te añaden al balance final de tu cuenta de ahorros. Escribir un programa que comience leyendo la cantidad de dinero depositada en la cuenta de ahorros, introducida por el usuario. Después el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras el primer, segundo y tercer años. Redondear cada cantidad a dos decimales."""
 
-ah = int(float(input("¿Qué cantidad de ahorros tienes? ")));
+# ah = int(float(input("¿Qué cantidad de ahorros tienes? ")));
 
-y1 = (ah*(1+(4/100)))
-y2 = (y1*(1+(4/100)))
-y3 = (y2*(1+(4/100)))
+# y1 = (ah*(1+(4/100)))
+# y2 = (y1*(1+(4/100)))
+# y3 = (y2*(1+(4/100)))
 
-print(f"Después del primer año la cantidad de ahorros es: {"%.2f" % y1} €\nSegundo año sería: {"%.2f" % y2} €\nTercer año: {"%.2f" % y3} €")
+# print(f"Después del primer año la cantidad de ahorros es: {"%.2f" % y1} €\nSegundo año sería: {"%.2f" % y2} €\nTercer año: {"%.2f" % y3} €")
 
-"""12. Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%. Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total."""
+"""12. Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%. Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Despunés el programa debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total."""
+
+p = int(input("¿Cuantas barras se han vendido que no son frescas? "));
+P = p*3.49
+d = p*(3.49*0.60)
+T = p*(3.49*0.40)
+
+print(f"\nBarra de pan: 3,49€   {p} ud   {"%.2f" % P}€\nDescuento -60%: -{"%.2f" % d}€\nTotal con descuento: {"%.2f" % T}€")
