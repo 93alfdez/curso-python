@@ -23,6 +23,6 @@ b = 3
 print(a/b)
 
 
-c = int(c) #solo numeros enteros
-c = float(c) #solo numeros enteros
+c = int(c) #convierte a número entero
+c = float(c) #convierte string a string
 
