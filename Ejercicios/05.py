@@ -96,4 +96,4 @@ P = p*3.49
 d = p*3.49*0.60
 T = p*3.49*0.40
 
-print(f"\nBarra de pan: 3,49€   {p} ud   {"%.2f" % P}€\nDescuento -60%: -{"%.2f" % d}€\nTotal con descuento: {"%.2f" % T}€")
+print(f"\nBarra de pan: 3,49€   {round(p)} ud   {round(P)}€\nDescuento -60%: -{round(d)}€\nTotal con descuento: {round(T)}€")
