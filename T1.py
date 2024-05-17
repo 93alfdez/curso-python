@@ -1,28 +1,22 @@
-## Asignación: <<variable>> = <valor>
+# Funciones
 
-# TIPOS DE DATOS
+# def <<nombre funcion>>(<<variables>>):
+    # <<cuerpo>>
+    # return <<devolucion>>
 
-## numericos -> todos los números (0-9)
+# nombre = input("Tu nombre: ")
 
-### suma: + // resta: - // multiplicacion: * // division decimal: /
-### division entera (cociente): // | resto: %
-### mayor > // menor < // mayor o igual >= // menor o igual <= // igual: ==
-### exponenciacion: ** // trigonométricas: <<importar math>>
-## string -> "<<texto>>" '<<texto>>'
-## booleanos -> True // False
-## y: and // o: or // distinto: != // ni: not(<<>>)
-### concatenar: + // replicacion: * // comparacion: == // posicional : < >
+# def saludar(nombre):
+#     return "hola " + nombre
 
-### True and True = True // False and True = True and False = False // False and False = False
-### True or True = True // True or False = False  True or True // False or False = False
+# print(f"Te dicen: {saludar(nombre)}")
+
+# Crear un programa que pida al usuario un número entero positivo y que invoque a una función llamada cuadrado que devuelva el cuadrado del número que se le pase por parámetro
 
 
-a = 4
-b = 3
+def cuadrado(n):
+    return n**2
 
-print(a/b)
+n = int(float(input("Dame un número ")))
 
-
-c = int(c) #convierte a número entero
-c = float(c) #convierte string a string
-
+print(f"El cuadrado del {n} es {cuadrado(n)}")

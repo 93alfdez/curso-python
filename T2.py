@@ -1,14 +1,22 @@
-# CADENAS DE TEXTO
-## len(<string>) -> longitud del str
-## indice: posicion que ocupa un caracter dentro del str
-## <var str>[<indice>]
-##.upper() -> convierte a mayus
-## .lower() -> convierte a minus
-## .replace(<caracter a buscar>,<caracter a cambiar>)
-## .strip() -> eliminar espacios
-## title() -> convierte la primera letra de cada palabra en mayus
-## capitalize() -> capitalizar el str
-## .find(<caracter a buscar>) -> devuelve el indice de la primera coincidencia
+# Funciones
 
-a = "Hola "
-print(a[3])
+# def <<nombre funcion>>(<<variables>>):
+    # <<cuerpo>>
+    # return <<devolucion>>
+
+# nombre = input("Tu nombre: ")
+
+# def saludar(nombre):
+#     return "hola " + nombre
+
+# print(f"Te dicen: {saludar(nombre)}")
+
+# Crear un programa que pida al usuario un número entero positivo y que invoque a una función llamada cuadrado que devuelva el cuadrado del número que se le pase por parámetro
+
+
+def cuadrado(n):
+    return n**2
+
+n = int(float(input("Dame un número ")))
+
+print(f"El cuadrado del {n} es {cuadrado(n)}")
